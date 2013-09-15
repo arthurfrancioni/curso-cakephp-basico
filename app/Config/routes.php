@@ -32,7 +32,13 @@
  */
 	Router::connect('/paginas/*', array('controller' => 'pages', 'action' => 'display'));
         
-        Router::connect('/paginas/*', array('controller' => 'contatos', 'action' => 'display'));
+        /*
+         * Novas rotas criadas
+         */
+        Router::connect('/sobre-o-evento', array('controller' => 'pages', 'action' => 'display', 'sobre-o-evento'));
+        Router::connect('/como-chegar', array('controller' => 'pages', 'action' => 'display', 'como-chegar'));
+        
+;
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
